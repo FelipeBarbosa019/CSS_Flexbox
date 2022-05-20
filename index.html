@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Dosis:wght@200&family=Inconsolata:wght@200&family=Koulen&family=Noto+Serif:ital@1&family=Oleo+Script+Swash+Caps&family=Patrick+Hand&family=Permanent+Marker&family=Press+Start+2P&family=Radio+Canada:wght@300&family=Roboto:wght@100&family=Source+Serif+Pro:wght@200&family=Zen+Loop:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+
+        <figure class="alpha">
+            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 368 190" width="10vw" height="10vw">
+                <title>Novo Projeto</title>
+                <defs>
+                    <image width="87" height="103" id="img2" href="data:image/png;base64,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"/>
+                </defs>
+                <style>
+                    tspan { white-space:pre } 
+                    .t0 { font-size: 60px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSerif", "DejaVu Serif" } 
+                    .t1 { font-size: 30px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSerif", "DejaVu Serif" } 
+                    .t2 { font-size: 37px;fill: #ffffff;font-weight: 400;font-family: "DejaVuSerif", "DejaVu Serif" } 
+                </style>
+                <use id="Background" href="#img1" x="-444" y="-236"/>
+                <use id="Logo-Alphaedtech" href="#img2" transform="matrix(1.2,0,0,1.2,232.904,35.47)"/>
+                <text id="Alpha 	ed/tech" style="transform: matrix(1,0,0,1,34,94)" >
+                    <tspan x="0" y="0" class="t0">A</tspan><tspan  y="0" class="t0">l</tspan><tspan  y="0" class="t0">p</tspan><tspan  y="0" class="t0">h</tspan><tspan  y="0" class="t0">a</tspan><tspan  y="0" class="t1">
+            </tspan>
+                    <tspan x="0" y="44.4" class="t2">	</tspan><tspan  y="44.4" class="t2">e</tspan><tspan  y="44.4" class="t2">d</tspan><tspan  y="44.4" class="t2">/</tspan><tspan  y="44.4" class="t2">t</tspan><tspan  y="44.4" class="t2">e</tspan><tspan  y="44.4" class="t2">c</tspan><tspan  y="44.4" class="t2">h</tspan><tspan  y="44.4" class="t2">
+            </tspan>
+                </text>
+            </svg>
+        </figure>
+
+        <figure class="turing">
+            <img src="./Logos/logo_turing.svg">
+        </figure>
+
+    </header>
+
+    <main>
+        <h1>Exemplos de fleboxs:</h1> <br>
+
+        <h2> Itens alinhados no centro, sintaxe:  display: flex; Justify-content: center;  align-items: center;</h2>
+        <section class="general">
+
+            <div class="jcc">
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+             </div>
+        </section>
+    
+        <h2> Itens alinhados no centro na horizontal, sintaxe:  display: flex; Justify-content: center</h2>
+        <section class="general">
+            <div class="jcch">
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+            </div>
+        </section>
+     
+        <h2> Itens alinhados no centro na vertical, sintaxe:  display: flex; Justify-content: center; flex-direction: column;</h2>
+        <section class="general">
+            <div class="jccv">
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+            </div>
+        </section>
+
+        <h2> Imagem no centro de um container, sintaxe:  display: flex; Justify-content: center;  align-items: center;</h2>
+        <section class="general">
+            <div class="jcci">
+              <img class="imagem_logo" src="./Logos/logo_turing.png">
+            </div>
+        </section>
+      
+       
+    </main>
+   
+    <footer>
+        <div class="footer-content">
+                <ul class="socials">
+                  <li><a href="https://github.com/FelipeBarbosa019?tab=repositories"><i class="fa fa-github-alt"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/felipe-barbosa-a997351bb/"><i class="fa fa-linkedin-square"></i></a></li>
+                  <li><a href="mailto:f196750@dac.unicamp.br"><i class="fa fa-google"></i></a></li>
+                  <li><a href="https://www.facebook.com/felipe.freitas.969/"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://twitter.com/FelpsB019"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+        </div>
+
+    </footer>
+
+</body>
+</html>

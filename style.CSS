@@ -1,0 +1,149 @@
+
+/* --------------- reset --------------- */
+
+*{
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    box-sizing: border-box;
+}
+
+
+/* --------------- Header --------------- */
+
+.turing {
+    padding-top: 1vw;
+    padding-right: 0vw;
+}
+
+.alpha {
+padding-top: 0.2vw;
+padding-left: 1vw;
+}
+
+.header {
+    background-image: linear-gradient(Black, rgb(14, 77, 14), black);
+    height: 7vw;
+    width: 98.7vw;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+
+/* --------------- body --------------- */
+
+body {
+    background-color: rgb(11, 48, 5);
+    background-attachment: fixed;
+}
+
+main{
+    margin-top: 8vw;
+    margin-inline-start: 15px;
+    margin-bottom: 7vw;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+    color: white; 
+}
+
+h2 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blocks {
+    height: 2vw;
+    width: 2vw;
+    border-style: double;
+    background-color: black;
+    border-color: red;
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    background-color: rgb(72, 139, 76);
+}
+
+.jcch {
+    display: flex;
+    justify-content: center;
+    height: 2vw;
+    width: 15vw;
+    background-color: rgb(72, 139, 76);
+}
+
+.jccv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15vw;
+    width: 2vw;
+    background-color: rgb(72, 139, 76);
+}
+
+.jcci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    background-color: rgb(72, 139, 76);
+}
+
+.imagem_logo {
+    width: 9vw;
+    height: 9vw;
+}
+
+/* --------------- Footer --------------- */
+
+footer{
+    width: 98.7vw;
+    height: 6vw;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0vw;
+    margin-top: 2vw;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a:hover i {
+    color:rgb(24, 233, 17);
+    transform: scale(2.5);
+    transition: 2s;
+}
+
+.socials a:active i {
+    color: rgb(236, 121, 14);
+}
